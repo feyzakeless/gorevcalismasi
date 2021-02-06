@@ -156,14 +156,26 @@ ul.list-items{
 .list-item:nth-last-child(-n+4) {
     border-bottom:0;
 }
+.list-item.col-md-4.col-lg-4.col-xl-4:nth-last-child(-n+4){
+    border-bottom: 2px solid #f1f1f1;
+}
+.list-item.col-md-4.col-lg-4.col-xl-4:last-child{
+    border-bottom: 0;
+}
 .list-item .product-box{
     padding: 20px;
     min-height: 405px;
+}
+.list-item.col-md-4.col-lg-4.col-xl-4 .product-box{
+    min-height: 500px;
 }
 .img-responsive {
     width: auto;
     max-width: 100%;
     height: 200px;
+}
+.list-item.col-md-4.col-lg-4.col-xl-4 .img-responsive{
+    height: auto;
 }
 .item-detail {
     cursor: pointer;
